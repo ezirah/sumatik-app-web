@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankara SuNokta — Gizlilik Politikası</title>
+<meta name="description" content="Ankara SuNokta uygulamasının KVKK uyumlu gizlilik politikası.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">SU</div>
+    <h1>Gizlilik Politikası</h1>
+  </div>
+  <p class="sub">Ankara SuNokta · Son güncelleme: 22 Ağustos 2026</p>
+</header>
+
+<nav class="nav">
+  <a href="../">Destek</a>
+  <a href="./" aria-current="page">Gizlilik Politikası</a>
+</nav>
+
+
+<p>
+  Ankara SuNokta, Ankara'da ön ödemeli su sayaçlarına kontör yüklenen kioskları
+  (“sumatik”) bulmanıza ve bunların çalışıp çalışmadığını görmenize yarayan
+  bağımsız bir uygulamadır. Bu metin, uygulamayı kullanırken hangi verilerin
+  işlendiğini açıklar.
+</p>
+
+<div class="note">
+  <strong>Kısaca:</strong> Hesap açmanız gerekmez. Ad, e-posta veya telefon
+  istenmez. Konumunuz yalnızca bildirim gönderdiğiniz anda, bildirimin gerçekten
+  o noktadan geldiğini doğrulamak için kullanılır. Kullanım analitiği yalnızca
+  izin verirseniz toplanır. Reklam yok, izleme (tracking) yok.
+</div>
+
+<h2>1. Veri sorumlusu</h2>
+<p><strong>Ankara SuNokta</strong> — İletişim: <a href="mailto:abz.esra@gmail.com">abz.esra@gmail.com</a></p>
+
+<h2>2. Hesap açmadan kullanım</h2>
+<p>
+  Uygulamada üyelik yoktur. Cihazınıza anonim bir kimlik (Firebase Anonymous Auth)
+  atanır. Bu kimlik gerçek kimliğinizle eşleştirilmez; uygulamayı kaldırdığınızda
+  veya uygulama verisini sildiğinizde bağ kopar. Bu kimliğin tek amacı, aynı
+  cihazın tekrar tekrar bildirim göndererek bir noktanın durumunu çarpıtmasını
+  önlemektir.
+</p>
+
+<h2>3. İşlenen veriler ve amaçları</h2>
+<table>
+  <tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep (KVKK m.5)</th></tr>
+  <tr>
+    <td>Anonim cihaz kimliği</td>
+    <td>Aynı cihazın sonucu çarpıtmasını önlemek</td>
+    <td>Meşru menfaat (m.5/2-f)</td>
+  </tr>
+  <tr>
+    <td><strong>Konum (ham koordinat)</strong></td>
+    <td>Bildirimin gerçekten kioskun yanından geldiğini doğrulamak</td>
+    <td>Meşru menfaat (m.5/2-f)</td>
+  </tr>
+  <tr>
+    <td>Bildirim içeriği (kiosk, çalışıyor/çalışmıyor, arıza sebebi, zaman)</td>
+    <td>Diğer kullanıcılara güncel durumu göstermek</td>
+    <td>Meşru menfaat (m.5/2-f)</td>
+  </tr>
+  <tr>
+    <td>Kilitlenme kayıtları (cihaz modeli, işletim sistemi, uygulama sürümü, hata yığını)</td>
+    <td>Uygulama kararlılığını sağlamak</td>
+    <td>Meşru menfaat (m.5/2-f)</td>
+  </tr>
+  <tr>
+    <td>Harita gösterimi (cihaz/uygulama tanımlayıcıları, IP adresi, görüntülenen bölge)</td>
+    <td>Kioskları harita üzerinde göstermek</td>
+    <td>Meşru menfaat (m.5/2-f)</td>
+  </tr>
+  <tr>
+    <td><strong>Kullanım analitiği</strong> (görüntülenen kiosk, gönderilen bildirim türü, uygulama örneği kimliği, IP'den ülke/şehir düzeyinde konum)</td>
+    <td>Uygulamanın nasıl kullanıldığını anlamak ve geliştirmek</td>
+    <td><strong>Açık rıza (m.5/1)</strong></td>
+  </tr>
+</table>
+
+<p>
+  <strong>Analitik yalnızca açık rızanızla işlenir.</strong> İlk açılışta sorulur;
+  rıza vermezseniz uygulama tüm özellikleriyle çalışmaya devam eder. Kararınızı
+  uygulama içindeki <em>Gizlilik</em> ekranından dilediğiniz an değiştirebilirsiniz;
+  rızayı geri aldığınızda toplama durur.
+</p>
+
+<h2>4. Konum verisi</h2>
+<ul>
+  <li>Konum yalnızca <strong>bildirim gönderdiğiniz anda</strong> alınır; arka planda takip yapılmaz.</li>
+  <li>Ham koordinatınız herkese açık bildirim kaydında <strong>yer almaz</strong>. Ayrı ve gizli bir koleksiyonda tutulur; hiçbir kullanıcı okuyamaz.</li>
+  <li>Herkese açık kayıtta konum yerine yalnızca “kioska yakındı” bilgisi (doğru/yanlış) bulunur.</li>
+  <li>Yaklaşık konum, en yakın noktaları sıralamak için cihazınızda kullanılır.</li>
+</ul>
+
+<h2>5. Harita sağlayıcıları</h2>
+<p>Harita servisleri <strong>ayrı veri sorumlusu</strong> olarak kendi kurallarına göre veri işler:</p>
+<ul>
+  <li><strong>iOS:</strong> Apple Haritalar (Apple Inc.) —
+    <a href="https://www.apple.com/legal/privacy/">gizlilik politikası</a></li>
+  <li><strong>Android:</strong> Google Maps (Google LLC) —
+    <a href="https://www.google.com/help/terms_maps/">kullanım şartları</a>,
+    <a href="https://policies.google.com/privacy">gizlilik politikası</a></li>
+</ul>
+<p>
+  “Yol tarifi al” düğmesi sizi cihazınızdaki harita uygulamasına yönlendirir;
+  o noktadan sonra ilgili uygulamanın kendi koşulları geçerlidir.
+</p>
+
+<h2>6. Yurt dışına aktarım</h2>
+<p>
+  Uygulama altyapısı <strong>Google Firebase</strong> (Google LLC / Google Ireland Ltd.)
+  üzerinde çalışır; veriler yurt dışındaki sunucularda işlenebilir ve saklanabilir.
+  Aktarım KVKK m.9 çerçevesinde; analitik veriler bakımından <strong>açık rızanıza</strong> dayanır.
+</p>
+
+<h2>7. Saklama süreleri</h2>
+<ul>
+  <li>Ham konum kayıtları: işleme amacının (bildirim doğrulama) gerektirdiği süre boyunca.</li>
+  <li>Bildirim kayıtları: durum hesaplamasında son 48 saat dikkate alınır.</li>
+  <li>Analitik ve kilitlenme kayıtları: Firebase'in varsayılan saklama süreleri boyunca (analitik için azami 14 ay).</li>
+</ul>
+
+<h2>8. Çocuklar</h2>
+<p>
+  Uygulama çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.
+</p>
+
+<h2 id="haklar">9. Haklarınız (KVKK m.11)</h2>
+<p>
+  Kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme,
+  işlenme amacını öğrenme, yurt içinde/yurt dışında aktarıldığı üçüncü kişileri
+  bilme, eksik veya yanlış işlenmişse düzeltilmesini, şartları oluştuğunda
+  silinmesini veya yok edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere
+  bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesine itiraz
+  etme ve zarara uğramanız hâlinde giderilmesini talep etme haklarına sahipsiniz.
+</p>
+<p>
+  <strong>Başvuru:</strong> <a href="mailto:abz.esra@gmail.com">abz.esra@gmail.com</a>.
+  Uygulamada hesap bulunmadığından, talebinizi eşleştirebilmek için uygulama
+  içindeki <em>Gizlilik</em> ekranında görünen <strong>anonim cihaz kimliğini</strong>
+  paylaşmanız gerekebilir.
+</p>
+
+<h2>10. Bu metindeki değişiklikler</h2>
+<p>
+  Politika güncellenirse bu sayfadaki “son güncelleme” tarihi değişir. Önemli
+  değişikliklerde uygulama içinde bilgilendirme yapılır.
+</p>
+
+<h2 id="english">English summary</h2>
+<p>
+  Ankara SuNokta helps people in Ankara find prepaid water-meter top-up kiosks and
+  see whether they are working, based on reports from other users. No account is
+  required and no name, e-mail or phone number is collected. Location is used only
+  at the moment you submit a report, to verify that the report comes from the kiosk
+  location; the raw coordinate is stored separately and is never publicly readable.
+  Usage analytics are collected <strong>only with your explicit consent</strong> and can be
+  withdrawn at any time from the in-app Privacy screen. Crash reports are used to
+  keep the app stable. Data is processed on Google Firebase infrastructure outside
+  Türkiye. The app performs no advertising and no tracking. Contact: abz.esra@gmail.com.
+</p>
+
+<div class="note">
+  <strong>Bağımsızlık bildirimi:</strong> Bu uygulama bağımsız bir projedir;
+  ASKİ (Ankara Su ve Kanalizasyon İdaresi) ile bağlantılı değildir, ASKİ tarafından
+  desteklenmez veya onaylanmaz. Kiosk konumları ASKİ'nin kamuya açık web
+  sayfasından derlenmiştir.
+</div>
+
+<footer>
+  <a href="../">Destek</a>
+  <a href="./">Gizlilik Politikası</a>
+  <a href="mailto:abz.esra@gmail.com">abz.esra@gmail.com</a>
+  <div style="margin-top:8px">Ankara SuNokta · Gizlilik Politikası · 22 Ağustos 2026</div>
+</footer>
+
+</div>
+</body>
+</html>
